@@ -11,7 +11,7 @@ public:
     Buffer()
         : Node("buffer"), count(0) {
         buffer_sub = create_subscription<sensor_msgs::msg::Image>(
-            "/image_proc", 10, std::bind(&Buffer::image_Callback, this, std::placeholders::_1)
+            "/camera", 10, std::bind(&Buffer::image_Callback, this, std::placeholders::_1)
         );
     }
 
