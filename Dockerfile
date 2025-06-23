@@ -1,5 +1,5 @@
 # Use official ROS 2 Humble desktop image (Ubuntu 22.04 + ROS + GUI tools)
-FROM osrf/ros:humble-desktop
+FROM arm64v8/ros:humble-perception 
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=en_US.UTF-8
