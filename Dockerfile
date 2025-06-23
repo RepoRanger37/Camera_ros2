@@ -36,8 +36,8 @@ RUN apt update && \
 WORKDIR /root
 RUN git clone https://github.com/RepoRanger37/Precision_landing_aruco.git && \
     cd Precision_landing_aruco/src && \
-    git clone https://github.com/PX4/px4_msgs.git && \
-    git clone https://github.com/Auterion/px4-ros2-interface-lib.git
+    git clone https://github.com/RepoRanger37/px4_msgs.git && \
+    git clone https://github.com/RepoRanger37/px4-ros2-interface-lib.git
 
 # Setup micro-ROS workspace and build agent
 WORKDIR /root
